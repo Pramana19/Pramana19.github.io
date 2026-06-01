@@ -20,34 +20,46 @@
             </span>
         </div>
     </div>
-
+    
     <nav class="sticky top-0 z-50 flex justify-between items-center py-3 px-6 bg-[#252a33]/95 backdrop-blur-sm border-b border-gray-700">
         <div class="text-xl font-bold tracking-tight text-cyan-400">
             Marcel Adhi Pramana
-        </div>
+        </div> 
+      
+        <button id="mobile-menu-btn" class="md:hidden text-gray-400 hover:text-white focus:outline-none">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path id="hamburger-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+        
         <div class="hidden md:flex space-x-6 text-sm items-center">
-            <a href="#about" id="nav-about" class="nav-link text-cyan-400 font-bold transition">
-                <span class="id-text">Tentang</span><span class="en-text">About</span>
-            </a>
-            <a href="#projects" id="nav-projects" class="nav-link text-white hover:text-cyan-400 transition">
-                <span class="id-text">Proyek</span><span class="en-text">Projects</span>
-            </a>
-            <a href="#certifications" id="nav-certifications" class="nav-link text-white hover:text-cyan-400 transition">
-                <span class="id-text">Sertifikasi</span><span class="en-text">Certifications</span>
-            </a>
-            <a href="#contact" id="nav-contact" class="nav-link text-white hover:text-cyan-400 transition">
-                <span class="id-text">Kontak</span><span class="en-text">Contact</span>
-            </a>
+            <a href="#about" id="nav-about" class="nav-link text-cyan-400 font-bold transition"><span class="id-text">Tentang</span><span class="en-text">About</span></a>
+            <a href="#projects" id="nav-projects" class="nav-link text-white hover:text-cyan-400 transition"><span class="id-text">Proyek</span><span class="en-text">Projects</span></a>
+            <a href="#certifications" id="nav-certifications" class="nav-link text-white hover:text-cyan-400 transition"><span class="id-text">Sertifikasi</span><span class="en-text">Certifications</span></a>
+            <a href="#contact" id="nav-contact" class="nav-link text-white hover:text-cyan-400 transition"><span class="id-text">Kontak</span><span class="en-text">Contact</span></a>
             <a href="https://github.com/Pramana19" target="_blank" class="bg-cyan-600 hover:bg-cyan-700 px-4 py-2 rounded shadow transition">GitHub</a>
             <div class="w-px h-5 bg-gray-600"></div>
-            <button id="lang-toggle" class="flex items-center text-gray-400 hover:text-white transition font-bold tracking-widest text-xs">
-                <span id="lang-text">ID</span>
-            </button>
-            <button id="theme-toggle" class="text-gray-400 hover:text-cyan-400 transition">
-                <svg id="theme-icon" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
-            </button>
+            <button id="lang-toggle" class="flex items-center text-gray-400 hover:text-white transition font-bold tracking-widest text-xs"><span id="lang-text">ID</span></button>
+            <button id="theme-toggle" class="text-gray-400 hover:text-cyan-400 transition"><svg id="theme-icon" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg></button>
         </div>
     </nav>
+    
+    <div id="mobile-menu" class="hidden md:hidden bg-[#1e2229] border-b border-gray-700 px-6 py-4 shadow-2xl fixed w-full z-40 transition-all duration-300">
+        <div class="flex flex-col space-y-4">
+            <a href="#about" class="mobile-link text-white hover:text-cyan-400 font-bold"><span class="id-text">Tentang</span><span class="en-text">About</span></a>
+            <a href="#projects" class="mobile-link text-white hover:text-cyan-400 font-bold"><span class="id-text">Proyek</span><span class="en-text">Projects</span></a>
+            <a href="#certifications" class="mobile-link text-white hover:text-cyan-400 font-bold"><span class="id-text">Sertifikasi</span><span class="en-text">Certifications</span></a>
+            <a href="#contact" class="mobile-link text-white hover:text-cyan-400 font-bold"><span class="id-text">Kontak</span><span class="en-text">Contact</span></a>
+            <hr class="border-gray-700">
+            <div class="flex justify-between items-center pt-2">
+                <a href="https://github.com/Pramana19" target="_blank" class="text-cyan-400 text-sm font-bold">GitHub Profile</a>
+                <div class="flex space-x-4">
+                    <button id="mobile-lang-toggle" class="text-gray-400 hover:text-white font-bold tracking-widest text-xs">ID/EN</button>
+                    <button id="mobile-theme-toggle" class="text-gray-400 hover:text-cyan-400"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg></button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="relative flex flex-col items-center justify-center min-h-[85vh] text-center px-4 bg-cover bg-center bg-no-repeat" style="background-image: url('images/bg_baru.png');">
         <div class="absolute inset-0 hero-overlay"></div>
