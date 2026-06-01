@@ -191,3 +191,45 @@ if(themeToggleBtn) {
         }
     });
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const hamburgerIcon = document.getElementById('hamburger-icon');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+
+    if(mobileMenuBtn && mobileMenu) {      
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+                        
+            if(mobileMenu.classList.contains('hidden')) {
+                hamburgerIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16'); 
+            } else {
+                hamburgerIcon.setAttribute('d', 'M6 18L18 6M6 6l12 12'); 
+            }
+        });
+        
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                hamburgerIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+            });
+        });
+    }
+    
+    const mobileLangToggle = document.getElementById('mobile-lang-toggle');
+    const langToggleBtnDesktop = document.getElementById('lang-toggle');
+    if(mobileLangToggle && langToggleBtnDesktop) {
+        mobileLangToggle.addEventListener('click', () => {
+            langToggleBtnDesktop.click(); // Numpang fungsi tombol desktop
+        });
+    }
+
+    const mobileThemeToggle = document.getElementById('mobile-theme-toggle');
+    const themeToggleBtnDesktop = document.getElementById('theme-toggle');
+    if(mobileThemeToggle && themeToggleBtnDesktop) {
+        mobileThemeToggle.addEventListener('click', () => {
+            themeToggleBtnDesktop.click(); // Numpang fungsi tombol desktop
+        });
+    }
+});
