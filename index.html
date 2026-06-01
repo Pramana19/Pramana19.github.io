@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcel Adhi Pramana | Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#1e2229] text-white font-sans">
+    
+    <div id="preloader" class="fixed inset-0 z-[9999] flex items-center justify-center bg-[#1e2229] transition-opacity duration-700">
+        <div class="relative flex items-center justify-center">
+            <svg width="220" height="60" class="absolute">
+                <rect x="2" y="2" width="216" height="56" rx="28" fill="none" stroke="#374151" stroke-width="2" />
+                <rect x="2" y="2" width="216" height="56" rx="28" fill="none" stroke="#22d3ee" stroke-width="3" class="loader-path" />
+            </svg>
+            <span class="text-cyan-400 font-bold text-xs tracking-widest uppercase px-10 py-5">
+                Tunggu bentar yaa
+            </span>
+        </div>
+    </div>
+
+    <nav class="sticky top-0 z-50 flex justify-between items-center py-3 px-6 bg-[#252a33]/95 backdrop-blur-sm border-b border-gray-700">
+        <div class="text-xl font-bold tracking-tight text-cyan-400">
+            Marcel Adhi Pramana
+        </div>
+        <div class="hidden md:flex space-x-6 text-sm items-center">
+            <a href="#about" id="nav-about" class="nav-link text-cyan-400 font-bold transition">
+                <span class="id-text">Tentang</span><span class="en-text">About</span>
+            </a>
+            <a href="#projects" id="nav-projects" class="nav-link text-white hover:text-cyan-400 transition">
+                <span class="id-text">Proyek</span><span class="en-text">Projects</span>
+            </a>
+            <a href="#certifications" id="nav-certifications" class="nav-link text-white hover:text-cyan-400 transition">
+                <span class="id-text">Sertifikasi</span><span class="en-text">Certifications</span>
+            </a>
+            <a href="#contact" id="nav-contact" class="nav-link text-white hover:text-cyan-400 transition">
+                <span class="id-text">Kontak</span><span class="en-text">Contact</span>
+            </a>
+            <a href="https://github.com/Pramana19" target="_blank" class="bg-cyan-600 hover:bg-cyan-700 px-4 py-2 rounded shadow transition">GitHub</a>
+            <div class="w-px h-5 bg-gray-600"></div>
+            <button id="lang-toggle" class="flex items-center text-gray-400 hover:text-white transition font-bold tracking-widest text-xs">
+                <span id="lang-text">ID</span>
+            </button>
+            <button id="theme-toggle" class="text-gray-400 hover:text-cyan-400 transition">
+                <svg id="theme-icon" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+            </button>
+        </div>
+    </nav>
+
+    <div class="relative flex flex-col items-center justify-center min-h-[85vh] text-center px-4 bg-cover bg-center bg-no-repeat" style="background-image: url('images/bg_baru.png');">
+        <div class="absolute inset-0 hero-overlay"></div>
+        <div class="relative z-10 flex flex-col items-center justify-center w-full mt-10">
+            <div class="mb-10 relative flex items-center justify-center">
+                <div class="dashed-ring absolute w-44 h-44 border-4 rounded-full opacity-100"></div>
+                <div class="w-36 h-36 bg-[#252a33] rounded-full flex items-center justify-center border border-gray-600 z-10 shadow-2xl">
+                    <span class="text-3xl font-black tracking-widest text-white italic">MAP</span>
+                </div>
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-4 tracking-tight min-h-[4rem]">
+                <span id="typed-text"></span>
+            </h1>
+            <p class="text-gray-300 max-w-2xl text-lg mb-8 leading-relaxed">
+                <span class="id-text">Membangun solusi interaktif melalui Game Edukasi (CABEKO) dan mendalami infrastruktur teknologi melalui Cloud &amp; Cybersecurity.</span>
+                <span class="en-text">Building interactive solutions through Educational Games (CABEKO) and exploring technology infrastructure via Cloud & Cybersecurity.</span>
+            </p>
+            <div class="flex flex-wrap justify-center gap-3 mb-10">
+                <span class="bg-[#2d333d]/80 backdrop-blur-sm border border-gray-700 px-4 py-1.5 rounded-md text-xs font-semibold text-[#22d3ee] uppercase tracking-wider">Unity (C#)</span>
+                <span class="bg-[#2d333d]/80 backdrop-blur-sm border border-gray-700 px-4 py-1.5 rounded-md text-xs font-semibold text-[#22d3ee] uppercase tracking-wider">Construct 3</span>
+                <span class="bg-[#2d333d]/80 backdrop-blur-sm border border-gray-700 px-4 py-1.5 rounded-md text-xs font-semibold text-[#22d3ee] uppercase tracking-wider">AWS Cloud</span>
+                <span class="bg-[#2d333d]/80 backdrop-blur-sm border border-gray-700 px-4 py-1.5 rounded-md text-xs font-semibold text-[#22d3ee] uppercase tracking-wider">Cisco Networking</span>
+                <span class="bg-[#2d333d]/80 backdrop-blur-sm border border-gray-700 px-4 py-1.5 rounded-md text-xs font-semibold text-[#22d3ee] uppercase tracking-wider">PHP Laravel</span>
+            </div>
+            <div class="flex space-x-4">
+                <a href="#projects" class="bg-white text-[#1e2229] font-bold py-3 px-10 rounded shadow-xl hover:bg-cyan-400 transition duration-300 inline-block">
+                    PORTFOLIO
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <section id="about" class="bg-[#1a1e25] py-20 px-6 scroll-mt-20">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center tracking-widest text-white">
+                <span class="id-text">TENTANG <span class="text-cyan-400">SAYA</span></span>
+                <span class="en-text">ABOUT <span class="text-cyan-400">ME</span></span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center"> 
+                <div class="md:col-span-2 order-2 md:order-1"> 
+                    <div class="id-text">
+                        <p class="text-gray-300 leading-relaxed mb-4">
+                            Seseorang dengan latar belakang Pendidikan Teknik Informatika yang fokus pada pengembangan media pembelajaran interaktif. Saya memiliki pengalaman dalam membangun game edukasi menggunakan Unity dan Construct 3, serta memahami alur kerja aset visual 2D maupun 3D.
+                        </p>
+                        <p class="text-gray-300 leading-relaxed mb-4">
+                            Memiliki pengalaman praktis sebagai Asisten Laboratorium, di mana saya mengelola operasional teknis praktikum dan mendampingi rekan mahasiswa dalam pemecahan masalah sistematis.
+                        </p>
+                        <p class="text-gray-300 leading-relaxed mb-4">
+                            Selain fokus pada pengembangan game, saya telah membekali diri dengan pemahaman fundamental di bidang Cloud Computing (AWS Academy) dan Cybersecurity (Cisco & TryHackMe) untuk mendukung kompetensi saya di infrastruktur IT.
+                        </p>
+                        <h3 class="text-xl font-semibold text-cyan-400 mb-3 mt-6">Keahlian Teknis</h3>
+                    </div>
+                    <div class="en-text">
+                        <p class="text-gray-300 leading-relaxed mb-4">
+                            A tech enthusiast with a background in Informatics Engineering Education, focusing on developing interactive learning media. I have experience in building educational games using Unity and Construct 3, along with a strong understanding of 2D and 3D visual asset workflows.
+                        </p>
+                        <p class="text-gray-300 leading-relaxed mb-4">
+                            I have practical experience as a Laboratory Assistant, managing technical practicum operations and mentoring fellow students in systematic problem-solving.
+                        </p>
+                        <p class="text-gray-300 leading-relaxed mb-4">
+                            Beyond game development, I have equipped myself with fundamental knowledge in Cloud Computing (AWS Academy) and Cybersecurity (Cisco & TryHackMe) to strengthen my IT infrastructure competencies.
+                        </p>
+                        <h3 class="text-xl font-semibold text-cyan-400 mb-3 mt-6">Technical Skills</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-[#2d333d] px-3 py-1 rounded-full text-xs text-gray-300">Unity (C#)</span>
+                        <span class="bg-[#2d333d] px-3 py-1 rounded-full text-xs text-gray-300">Construct 3</span>
+                        <span class="bg-[#2d333d] px-3 py-1 rounded-full text-xs text-gray-300">AWS Cloud</span>
+                        <span class="bg-[#2d333d] px-3 py-1 rounded-full text-xs text-gray-300">Cisco Networking</span>
+                        <span class="bg-[#2d333d] px-3 py-1 rounded-full text-xs text-gray-300">PHP Laravel</span>
+                    </div>
+                </div>
+                <div class="flex justify-center md:justify-end items-center order-1 md:order-2 mb-10 md:mb-0 transform md:translate-x-8 lg:translate-x-12">
+                    <div class="relative flex items-center justify-center group w-72 h-96">                    
+                        <svg class="absolute inset-0 w-full h-full text-cyan-400 opacity-80 group-hover:opacity-100 transition-opacity" viewBox="0 0 288 384" fill="none">
+                            <rect x="8" y="16" width="272" height="352" rx="136" stroke="currentColor" stroke-width="4" class="marching-oval" />
+                        </svg>
+                        <div class="w-60 h-80 rounded-full overflow-hidden border-2 border-gray-600 z-10 shadow-2xl transition-all duration-300 group-hover:border-cyan-400 group-hover:scale-105 bg-[#252a33]">
+                            <img src="images/poto - Copy.jpg" alt="Foto Marcel Adhi Pramana" class="w-full h-full object-cover"> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>   
+
+    <div id="projects" class="bg-[#1e2229] py-20 px-6 scroll-mt-20">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center tracking-widest text-white">
+                <span class="id-text">PROYEK <span class="text-cyan-400">TERBARU</span></span>
+                <span class="en-text">RECENT <span class="text-cyan-400">PROJECTS</span></span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <div class="group bg-[#252a33] rounded-xl overflow-hidden border border-gray-700 hover:border-cyan-500 transition-all duration-300 hover:-translate-y-2 shadow-lg flex flex-col">
+                    <div class="relative h-48 overflow-hidden shrink-0">
+                        <img src="images/Main Utama.png" alt="Cara Berpikir Komputasional (CABEKO)" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#1e2229] to-transparent opacity-60"></div>
+                        <span class="absolute bottom-4 left-4 bg-cyan-600 text-[10px] px-2 py-1 rounded font-bold uppercase">
+                            Computational Thinking Educational Games
+                        </span>
+                    </div>
+                    <div class="flex flex-col p-6 flex-1">
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-cyan-400 transition-colors">
+                            Cara Berpikir Komputasional (CABEKO)
+                        </h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                            <span class="id-text">Game edukasi untuk melatih cara berpikir komputasional siswa SMK.</span>
+                            <span class="en-text">An educational game designed to train computational thinking skills for vocational high school students.</span>
+                        </p>
+                        <a href="https://pramana19.itch.io/cabeko-cara-berpikir-komputasional" target="_blank" class="mt-auto text-cyan-400 text-xs font-bold hover:underline transition-all hover:text-white">
+                            <span class="id-text">MAIN & DETAIL →</span>
+                            <span class="en-text">PLAY FOR DETAILS →</span>
+                        </a>
+                    </div>
+                </div>
+                                
+                <div class="group bg-[#252a33] rounded-xl overflow-hidden border border-gray-700 hover:border-cyan-500 transition-all duration-300 hover:-translate-y-2 shadow-lg flex flex-col">
+                    <div class="relative h-48 overflow-hidden shrink-0">
+                        <img src="images/incikbosqu.png" alt="Petualangan Incikbosqu" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#1e2229] to-transparent opacity-60"></div>
+                        <span class="absolute bottom-4 left-4 bg-cyan-600 text-[10px] px-2 py-1 rounded font-bold uppercase">
+                            Educational Game Adventure
+                        </span>
+                    </div>
+                    <div class="flex flex-col p-6 flex-1">
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-cyan-400 transition-colors">
+                            Petualangan Incikbosqu
+                        </h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                            <span class="id-text">Game petualangan seru yang dikembangkan menggunakan Unity.</span>
+                            <span class="en-text">An exciting adventure game developed using the Unity engine.</span>
+                        </p>
+                        <a href="https://pramana19.itch.io/petualangan-incikbosqu" target="_blank" class="mt-auto text-cyan-400 text-xs font-bold hover:underline transition-all hover:text-white">
+                            <span class="id-text">MAIN & DETAIL →</span>
+                            <span class="en-text">PLAY FOR DETAILS →</span>
+                        </a>
+                    </div>
+                </div>
+                                
+                <div class="group bg-[#252a33] rounded-xl overflow-hidden border border-gray-700 hover:border-cyan-500 transition-all duration-300 hover:-translate-y-2 shadow-lg flex flex-col">
+                    <div class="relative h-48 overflow-hidden shrink-0">
+                        <img src="images/cyber.png" alt="CTF Writeups" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#1e2229] to-transparent opacity-60"></div>
+                        <span class="absolute bottom-4 left-4 bg-cyan-600 text-[10px] px-2 py-1 rounded font-bold uppercase">
+                            Cybersecurity
+                        </span>
+                    </div>
+                    <div class="flex flex-col p-6 flex-1">
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-cyan-400 transition-colors">
+                            CTF Writeups
+                        </h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                            <span class="id-text">Koleksi solusi tantangan Capture The Flag (Web, Forensics, &amp; Reversing).</span>
+                            <span class="en-text">A curated collection of solutions for Capture The Flag challenges (Web, Forensics, &amp; Reversing).</span>
+                        </p>
+                        <a href="#" target="_self" class="mt-auto text-cyan-400 text-xs font-bold hover:underline transition-all opacity-40 cursor-not-allowed">
+                            <span class="id-text">SEGERA HADIR</span>
+                            <span class="en-text">COMING SOON</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="certifications" class="bg-[#1a1e25] py-20 px-6 scroll-mt-20">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center tracking-widest text-white">
+                <span class="id-text">SERTIFIKASI <span class="text-cyan-400">SAYA</span></span>
+                <span class="en-text">MY <span class="text-cyan-400">CERTIFICATIONS</span></span>
+            </h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                
+                <div onclick="window.open('docs/AWS_Academy_Graduate___Cloud_Foundations___Training_Badge_Badge20251114-31-vrqc6x.pdf', '_blank')" class="group relative bg-[#252a33] rounded-lg overflow-hidden border border-gray-700 hover:border-cyan-500 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg cursor-pointer">
+                    <div class="relative aspect-video bg-gray-800 overflow-hidden">
+                        <img src="images/aws-academy-graduate-cloud-foundations-training-bad.png" alt="Cloud Foundations" class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 p-2">
+                        <div class="absolute inset-0 bg-cyan-900/50 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center gap-2">
+                            <a href="docs/AWS_Academy_Graduate___Cloud_Foundations___Training_Badge_Badge20251114-31-vrqc6x.pdf" target="_blank" onclick="event.stopPropagation();" class="text-[10px] font-bold text-white bg-cyan-600 px-3 py-1.5 rounded hover:bg-cyan-400 transition shadow-lg relative z-10">VIEW PDF</a>
+                        </div>
+                        <div class="absolute bottom-1 right-1 bg-black/60 text-[8px] px-1 py-0.5 rounded text-cyan-400 uppercase">AWS</div>
+                    </div>
+                    <div class="p-3">
+                        <h3 class="font-bold text-white text-[11px] leading-tight group-hover:text-cyan-400 transition-colors">Cloud Foundations</h3>
+                        <p class="text-gray-500 text-[9px] mt-1 italic">Issued Nov 2025</p>
+                    </div>
+                </div>
+
+                <div onclick="window.open('docs/AWS_Academy_Graduate___Cloud_Web_Application_Builder___Training_Badge_Badge20251114-32-r8r0kf.pdf', '_blank')" class="group relative bg-[#252a33] rounded-lg overflow-hidden border border-gray-700 hover:border-cyan-500 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg cursor-pointer">
+                    <div class="relative aspect-video bg-gray-800 overflow-hidden">
+                        <img src="images/aws-academy-graduate-cloud-web-application-builder-.png" alt="Cloud Web App Builder" class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 p-2">
+                        <div class="absolute inset-0 bg-cyan-900/50 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center gap-2">
+                            <a href="docs/AWS_Academy_Graduate___Cloud_Web_Application_Builder___Training_Badge_Badge20251114-32-r8r0kf.pdf" target="_blank" onclick="event.stopPropagation();" class="text-[10px] font-bold text-white bg-cyan-600 px-3 py-1.5 rounded hover:bg-cyan-400 transition shadow-lg relative z-10">VIEW PDF</a>
+                        </div>
+                        <div class="absolute bottom-1 right-1 bg-black/60 text-[8px] px-1 py-0.5 rounded text-cyan-400 uppercase">AWS</div>
+                    </div>
+                    <div class="p-3">
+                        <h3 class="font-bold text-white text-[11px] leading-tight group-hover:text-cyan-400 transition-colors">Cloud Web App Builder</h3>
+                        <p class="text-gray-500 text-[9px] mt-1 italic">Issued Sep 2025</p>
+                    </div>
+                </div>
+
+                <div onclick="window.open('docs/Introduction_to_Cybersecurity_Badge20241120-28-zlzmrt.pdf', '_blank')" class="group relative bg-[#252a33] rounded-lg overflow-hidden border border-gray-700 hover:border-cyan-500 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg cursor-pointer">
+                    <div class="relative aspect-video bg-gray-800 overflow-hidden">
+                        <img src="images/introduction-to-cybersecurity.png" alt="Intro to Cybersecurity" class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 p-2">
+                        <div class="absolute inset-0 bg-cyan-900/50 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center gap-2">
+                            <a href="docs/Introduction_to_Cybersecurity_Badge20241120-28-zlzmrt.pdf" target="_blank" onclick="event.stopPropagation();" class="text-[10px] font-bold text-white bg-cyan-600 px-3 py-1.5 rounded hover:bg-cyan-400 transition shadow-lg relative z-10">VIEW PDF</a>
+                        </div>
+                        <div class="absolute bottom-1 right-1 bg-black/60 text-[8px] px-1 py-0.5 rounded text-cyan-400 uppercase">CISCO</div>
+                    </div>
+                    <div class="p-3">
+                        <h3 class="font-bold text-white text-[11px] leading-tight group-hover:text-cyan-400 transition-colors">Intro to Cybersecurity</h3>
+                        <p class="text-gray-500 text-[9px] mt-1 italic">Issued Nov 2024</p>
+                    </div>
+                </div>
+
+                <div onclick="window.open('docs/Sertifikat_MARCEL ADHI PRAMANA_Introduction to Cybersecurity.pdf', '_blank')" class="group relative bg-[#252a33] rounded-lg overflow-hidden border border-gray-700 hover:border-cyan-500 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg cursor-pointer">
+                    <div class="relative aspect-video bg-gray-800 overflow-hidden">
+                        <img src="images/SertifikatDigitalent.png" alt="Intro to Cybersecurity (Thematic Academy)" class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 p-2">
+                        <div class="absolute inset-0 bg-cyan-900/50 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center gap-2">
+                            <a href="docs/Sertifikat_MARCEL ADHI PRAMANA_Introduction to Cybersecurity.pdf" target="_blank" onclick="event.stopPropagation();" class="text-[10px] font-bold text-white bg-cyan-600 px-3 py-1.5 rounded hover:bg-cyan-400 transition shadow-lg relative z-10">VIEW CERT 1</a>
+                            <a href="docs/Introduction_to_Cybersecurity_certificate_acel19official-gmail-com_ed5635e8-6d05-43d2-81e7-5587b4f83e3b.pdf" target="_blank" onclick="event.stopPropagation();" class="text-[10px] font-bold text-white bg-blue-600 px-3 py-1.5 rounded hover:bg-blue-400 transition shadow-lg relative z-10">VIEW CERT 2</a>
+                        </div>
+                        <div class="absolute bottom-1 right-1 bg-black/60 text-[8px] px-1 py-0.5 rounded text-cyan-400 uppercase">DIGITALENT KOMINFO</div>
+                    </div>
+                    <div class="p-3">
+                        <h3 class="font-bold text-white text-[11px] leading-tight group-hover:text-cyan-400 transition-colors">Intro to Cybersecurity (Thematic Academy)</h3>
+                        <p class="text-gray-500 text-[9px] mt-1 italic">Issued Nov 2024</p>
+                    </div>
+                </div>
+
+                <div onclick="window.open('docs/Python_Essentials_1_certificate_acel19official-gmail-com_b8c30086-21d2-4bbb-b022-0fd31ea4e1f7.pdf', '_blank')" class="group relative bg-[#252a33] rounded-lg overflow-hidden border border-gray-700 hover:border-cyan-500 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg cursor-pointer">
+                    <div class="relative aspect-video bg-gray-800 overflow-hidden">
+                        <img src="images/python-essentials-1.1.png" alt="Python Essentials 1" class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 p-2">
+                        <div class="absolute inset-0 bg-cyan-900/50 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center gap-2">
+                            <a href="docs/Python_Essentials_1_certificate_acel19official-gmail-com_b8c30086-21d2-4bbb-b022-0fd31ea4e1f7.pdf" target="_blank" onclick="event.stopPropagation();" class="text-[10px] font-bold text-white bg-cyan-600 px-3 py-1.5 rounded hover:bg-cyan-400 transition shadow-lg relative z-10">VIEW PDF</a>
+                        </div>
+                        <div class="absolute bottom-1 right-1 bg-black/60 text-[8px] px-1 py-0.5 rounded text-cyan-400 uppercase">CISCO</div>
+                    </div>
+                    <div class="p-3">
+                        <h3 class="font-bold text-white text-[11px] leading-tight group-hover:text-cyan-400 transition-colors">Python Essentials 1</h3>
+                        <p class="text-gray-500 text-[9px] mt-1 italic">Issued Jan 2024</p>
+                    </div>
+                </div>
+
+                <div onclick="window.open('https://www.freecodecamp.org/certification/marcel_ap/javascript-algorithms-and-data-structures-v8', '_blank')" class="group relative bg-[#252a33] rounded-lg overflow-hidden border border-gray-700 hover:border-cyan-500 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg cursor-pointer">
+                    <div class="relative aspect-video bg-gray-800 overflow-hidden">
+                        <img src="images/SertifikatMarcel_FreeCodeCampJS.png" alt="JS Algorithms &amp; Data Structures" class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 p-2">
+                        <div class="absolute inset-0 bg-cyan-900/50 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center gap-2">
+                            <a href="https://www.freecodecamp.org/certification/marcel_ap/javascript-algorithms-and-data-structures-v8" target="_blank" onclick="event.stopPropagation();" class="text-[10px] font-bold text-white bg-cyan-600 px-3 py-1.5 rounded hover:bg-cyan-400 transition shadow-lg relative z-10">VERIFY LINK</a>
+                        </div>
+                        <div class="absolute bottom-1 right-1 bg-black/60 text-[8px] px-1 py-0.5 rounded text-cyan-400 uppercase">FCC</div>
+                    </div>
+                    <div class="p-3">
+                        <h3 class="font-bold text-white text-[11px] leading-tight group-hover:text-cyan-400 transition-colors">JS Algorithms &amp; Data Structures</h3>
+                        <p class="text-gray-500 text-[9px] mt-1 italic">Issued Oct 2024</p>
+                    </div>
+                </div>
+
+                <div onclick="window.open('https://www.freecodecamp.org/certification/marcel_ap/responsive-web-design', '_blank')" class="group relative bg-[#252a33] rounded-lg overflow-hidden border border-gray-700 hover:border-cyan-500 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg cursor-pointer">
+                    <div class="relative aspect-video bg-gray-800 overflow-hidden">
+                        <img src="images/SertifikatMarcel_FreeCodeCamp.png" alt="Responsive Web Design" class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 p-2">
+                        <div class="absolute inset-0 bg-cyan-900/50 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center gap-2">
+                            <a href="https://www.freecodecamp.org/certification/marcel_ap/responsive-web-design" target="_blank" onclick="event.stopPropagation();" class="text-[10px] font-bold text-white bg-cyan-600 px-3 py-1.5 rounded hover:bg-cyan-400 transition shadow-lg relative z-10">VERIFY LINK</a>
+                        </div>
+                        <div class="absolute bottom-1 right-1 bg-black/60 text-[8px] px-1 py-0.5 rounded text-cyan-400 uppercase">FCC</div>
+                    </div>
+                    <div class="p-3">
+                        <h3 class="font-bold text-white text-[11px] leading-tight group-hover:text-cyan-400 transition-colors">Responsive Web Design</h3>
+                        <p class="text-gray-500 text-[9px] mt-1 italic">Issued Oct 2024</p>
+                    </div>
+                </div>
+
+                <div onclick="window.open('docs/Sertifikat_Magang_Diskominfo_SP_Surakarta_Marcel.pdf', '_blank')" class="group relative bg-[#252a33] rounded-lg overflow-hidden border border-gray-700 hover:border-cyan-500 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg cursor-pointer">
+                    <div class="relative aspect-video bg-gray-800 overflow-hidden">
+                        <img src="images/Sertifikat_magang_DiskominfoSP_Surakarta.png" alt="Magang Diskominfo SP Surakarta" class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 p-2">
+                        <div class="absolute inset-0 bg-cyan-900/50 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center gap-2">
+                            <a href="docs/Sertifikat_Magang_Diskominfo_SP_Surakarta_Marcel.pdf" target="_blank" onclick="event.stopPropagation();" class="text-[10px] font-bold text-white bg-cyan-600 px-3 py-1.5 rounded hover:bg-cyan-400 transition shadow-lg relative z-10">VIEW PDF</a>
+                        </div>
+                        <div class="absolute bottom-1 right-1 bg-black/60 text-[8px] px-1 py-0.5 rounded text-cyan-400 uppercase">DISKOMINFO</div>
+                    </div>
+                    <div class="p-3">
+                        <h3 class="font-bold text-white text-[11px] leading-tight group-hover:text-cyan-400 transition-colors">Magang Diskominfo SP Surakarta</h3>
+                        <p class="text-gray-500 text-[9px] mt-1 italic">Issued Oct 2025</p>
+                    </div>
+                </div>
+                <div onclick="window.open('docs/Marcel Adhi Pramana.pdf', '_blank')" class="group relative bg-[#252a33] rounded-lg overflow-hidden border border-gray-700 hover:border-cyan-500 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg cursor-pointer">
+                    <div class="relative aspect-video bg-gray-800 overflow-hidden">
+                        <img src="images/sertif aslab.PNG" alt="Laboratory Assistant" class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 p-2">
+                        <div class="absolute inset-0 bg-cyan-900/50 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center gap-2">
+                            <a href="docs/Marcel Adhi Pramana.pdf" target="_blank" onclick="event.stopPropagation();" class="text-[10px] font-bold text-white bg-cyan-600 px-3 py-1.5 rounded hover:bg-cyan-400 transition shadow-lg relative z-10">VIEW PDF</a>
+                        </div>
+                        <div class="absolute bottom-1 right-1 bg-black/60 text-[8px] px-1 py-0.5 rounded text-cyan-400 uppercase">PTI UMS</div>
+                    </div>
+                    <div class="p-3">
+                        <h3 class="font-bold text-white text-[11px] leading-tight group-hover:text-cyan-400 transition-colors">Laboratory Assistant</h3>
+                        <p class="text-gray-500 text-[9px] mt-1 italic">Issued Jan 2026</p>
+                    </div>
+                </div>
+            
+                <div onclick="window.open('docs/SertifikatTutorETP_Marcel_AP.pdf', '_blank')" class="group relative bg-[#252a33] rounded-lg overflow-hidden border border-gray-700 hover:border-cyan-500 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg cursor-pointer">
+                    <div class="relative aspect-video bg-gray-800 overflow-hidden">
+                        <img src="images/sertifikatTutorETP.png" alt="Tutor English Tutorial Program (ETP)" class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 p-2">
+                        <div class="absolute inset-0 bg-cyan-900/50 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center gap-2">
+                            <a href="docs/SertifikatTutorETP_Marcel_AP.pdf" target="_blank" onclick="event.stopPropagation();" class="text-[10px] font-bold text-white bg-cyan-600 px-3 py-1.5 rounded hover:bg-cyan-400 transition shadow-lg relative z-10">VIEW PDF</a>
+                        </div>
+                        <div class="absolute bottom-1 right-1 bg-black/60 text-[8px] px-1 py-0.5 rounded text-cyan-400 uppercase">LBIPU UMS</div>
+                    </div>
+                    <div class="p-3">
+                        <h3 class="font-bold text-white text-[11px] leading-tight group-hover:text-cyan-400 transition-colors">Tutor English Tutorial Program (ETP)</h3>
+                        <p class="text-gray-500 text-[9px] mt-1 italic">Issued 2024</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <section id="contact" class="bg-[#1e2229] py-20 px-6 scroll-mt-20">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center tracking-widest text-white">
+                <span class="id-text">HUBUNGI <span class="text-cyan-400">SAYA</span></span>
+                <span class="en-text">CONTACT <span class="text-cyan-400">ME</span></span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="space-y-6">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-full bg-cyan-600/20 flex items-center justify-center text-cyan-400">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                        </div>
+                        <div class="flex-1">
+                            <h4 class="font-bold text-white mb-1">Email</h4>
+                            <a href="mailto:acel19official@gmail.com" class="text-gray-400 hover:text-cyan-400 transition wrap-break-word">acel19official@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-full bg-cyan-600/20 flex items-center justify-center text-cyan-400">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                        </div>
+                        <div class="flex-1">
+                            <h4 class="font-bold text-white mb-1">
+                                <span class="id-text">Telepon</span>
+                                <span class="en-text">Phone</span>
+                            </h4>
+                            <a href="tel:+6285809609470" class="text-gray-400 hover:text-cyan-400 transition wrap-break-word">+62 85809609470</a>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-full bg-cyan-600/20 flex items-center justify-center text-cyan-400 shrink-0">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                        </div>
+                        <div class="flex-1">
+                            <h4 class="font-bold text-white mb-1">
+                                <span class="id-text">Alamat</span>
+                                <span class="en-text">Address</span>
+                            </h4>
+                            <p class="text-gray-400 wrap-break-word">Kost Al-Ghani, Nilasari, Gonilan, Kec. Kartasura, Kabupaten Sukoharjo, Jawa Tengah 57169</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-full bg-cyan-600/20 flex items-center justify-center text-cyan-400">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        </div>
+                        <div class="flex-1">
+                            <h4 class="font-bold text-white mb-1">
+                                <span class="id-text">Ketersediaan</span>
+                                <span class="en-text">Availability</span>
+                            </h4>
+                            <p class="text-gray-400 wrap-break-word">
+                                <span class="id-text">Saat ini tersedia untuk proyek Magang dan lepas (freelance).</span>
+                                <span class="en-text">Currently available for Internship and freelance projects.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <div class="bg-[#252a33] p-6 rounded-xl border border-gray-700">
+                        <form id="contact-form">
+                            <div class="mb-4">
+                                <label for="name" class="block text-gray-300 text-sm mb-2">
+                                    <span class="id-text">Nama Lengkap</span>
+                                    <span class="en-text">Full Name</span>
+                                </label>
+                                <input type="text" id="name" name="name" class="w-full bg-[#1e2229] border border-gray-600 rounded-lg px-4 py-2 text-white focus:outline-none focus:border-cyan-400 transition placeholder-lang" data-lang-id="Nama Anda" data-lang-en="Your Name" placeholder="Nama Anda">
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block text-gray-300 text-sm mb-2">
+                                    <span class="id-text">Alamat Email</span>
+                                    <span class="en-text">Email Address</span>
+                                </label>
+                                <input type="email" id="email" name="email" class="w-full bg-[#1e2229] border border-gray-600 rounded-lg px-4 py-2 text-white focus:outline-none focus:border-cyan-400 transition placeholder-lang" data-lang-id="Email Anda" data-lang-en="Your Email" placeholder="Email Anda">
+                            </div>
+                            <div class="mb-4">
+                                <label for="subject" class="block text-gray-300 text-sm mb-2">
+                                    <span class="id-text">Subjek</span>
+                                    <span class="en-text">Subject</span>
+                                </label>
+                                <input type="text" id="subject" name="subject" class="w-full bg-[#1e2229] border border-gray-600 rounded-lg px-4 py-2 text-white focus:outline-none focus:border-cyan-400 transition placeholder-lang" data-lang-id="Subjek Pesan" data-lang-en="Message Subject" placeholder="Subjek Pesan">
+                            </div>
+                            <div class="mb-6">
+                                <label for="message" class="block text-gray-300 text-sm mb-2">
+                                    <span class="id-text">Pesan</span>
+                                    <span class="en-text">Message</span>
+                                </label>
+                                <textarea id="message" name="message" rows="4" class="w-full bg-[#1e2229] border border-gray-600 rounded-lg px-4 py-2 text-white focus:outline-none focus:border-cyan-400 transition placeholder-lang" data-lang-id="Pesan Anda" data-lang-en="Your Message" placeholder="Pesan Anda"></textarea>
+                            </div>
+                            <button type="button" id="send-btn" class="w-full bg-cyan-600 hover:bg-cyan-700 text-white font-semibold py-2 px-4 rounded-lg transition">
+                                <span class="id-text">Kirim Pesan</span>
+                                <span class="en-text">Send Message</span>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="mt-2 text-right pr-2">
+                        <span class="text-gray-500 text-[9px] opacity-60 hover:opacity-100 transition-opacity">
+                            Animation <a href="https://iconscout.com/lottie-animations/man-holding-note" class="hover:text-cyan-400 transition underline" target="_blank">Man Holding Note</a> by <a href="https://iconscout.com/contributors/terdpongdesign" class="hover:text-cyan-400 transition underline" target="_blank">Terdpongdesign</a> on IconScout
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="bg-[#252a33] border-t border-gray-700 py-3 px-6">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 items-center gap-4">
+            <div class="text-gray-400 text-sm text-center md:text-left">
+                © 2026 <span class="text-cyan-400 font-bold">Marcel Adhi Pramana</span>. All Rights Reserved.
+            </div>
+            <div class="text-gray-500 text-xs italic tracking-widest uppercase text-center">
+                "Build, Learn, and Secure"
+            </div>
+            <div class="flex justify-center md:justify-end space-x-6">
+                <a href="#" target="_blank" class="text-gray-400 hover:text-pink-500 transition">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.266.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                </a>
+                <a href="https://github.com/Pramana19" target="_blank" class="text-gray-400 hover:text-white transition">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.042-1.416-4.042-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/hh-adhi-ab36b3244/" target="_blank" class="text-gray-400 hover:text-cyan-400 transition">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </a>
+                <a href="https://www.credly.com/users/marcel-adhi-pramana" target="_blank" class="text-gray-400 hover:text-[#ff6b00] transition">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 0L3 5v14l9 5 9-5V5l-9-5zm0 18c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="bapak-joget" class="fixed bottom-0 -left-6 md:-left-12 z-[9999] pointer-events-none w-40 h-40 md:w-56 md:h-56 opacity-0 transition-opacity duration-1000">
+        <lottie-player 
+            id="lottie-animation"
+            src="images/man-holding-note.json" 
+            background="transparent" 
+            speed="1" 
+            style="width: 100%; height: 100%; transform: scaleX(-1);" 
+            loop 
+            autoplay>
+        </lottie-player>
+    </div>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@2.0.4/dist/lottie-player.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
+    <script src="main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+html { scroll-behavior: smooth; }
+
+.dashed-ring { 
+    border-style: dashed;
+    border-color: #22d3ee; 
+}
+
+.loader-path {
+    stroke-dasharray: 20, 236;
+    stroke-linecap: round;
+    animation: loading-run 3s linear infinite;
+}
+
+@keyframes loading-run {
+    from { stroke-dashoffset: 512; }
+    to { stroke-dashoffset: 0; }
+}
+
+.animate-float {
+    animation: float 4s ease-in-out infinite;
+}
+
+.marching-oval {
+    stroke-dasharray: 8, 8;
+    stroke-linecap: round;
+    stroke-dashoffset: 0;
+    transition: stroke-dashoffset 1s ease-in-out; 
+}
+
+.group:hover .marching-oval {
+    stroke-dashoffset: -150;
+}
+
+.en-text { display: none; }
+html.en-mode .en-text { display: block; }
+html.en-mode span.en-text { display: inline; }
+html.en-mode .id-text { display: none; }
+
+html.krem-mode body {
+    background-color: #EDEDCE;
+    color: #1f2937;
+}
+
+html.krem-mode .bg-\[\#1e2229\] { background-color: #EDEDCE; }
+html.krem-mode .bg-\[\#1a1e25\] { background-color: #E5E5C5; }
+html.krem-mode .bg-\[\#252a33\] { background-color: #F7F7E8; }
+html.krem-mode .bg-\[\#2d333d\] { background-color: #D1D1B5; }
+html.krem-mode #preloader { background-color: #EDEDCE; }
+
+html.krem-mode .text-white { color: #111827; }
+html.krem-mode .text-gray-400 { color: #4b5563; }
+html.krem-mode .text-gray-300 { color: #374151; }
+html.krem-mode .text-gray-500 { color: #6b7280; }
+
+html.krem-mode .border-gray-700 { border-color: #C2C2A3; }
+html.krem-mode .border-gray-600 { border-color: #B0B092; }
+
+html.krem-mode .text-cyan-400 { color: #296374 !important; }
+html.krem-mode .dashed-ring { border-color: #296374 !important; }
+html.krem-mode .bg-cyan-600 { background-color: #296374 !important; color: #ffffff !important; }
+html.krem-mode .hover\:bg-cyan-700:hover { background-color: #1f4b58 !important; }
+html.krem-mode .hover\:text-cyan-400:hover { color: #296374 !important; }
+html.krem-mode .hover\:border-cyan-500:hover { border-color: #296374 !important; }
+html.krem-mode .group:hover .group-hover\:border-cyan-400 { border-color: #296374 !important; }
+html.krem-mode .bg-cyan-900\/50 { background-color: rgba(41, 99, 116, 0.8) !important; }
+
+html.krem-mode nav .text-white { color: #ffffff !important; }
+html.krem-mode nav .text-gray-400 { color: #9ca3af !important; }
+html.krem-mode nav .text-cyan-400 { color: #22d3ee !important; }
+html.krem-mode nav .hover\:text-white:hover { color: #ffffff !important; }
+html.krem-mode nav .hover\:text-cyan-400:hover { color: #22d3ee !important; }
+
+.hero-overlay {
+    background-color: rgba(30, 34, 41, 0.70);
+    transition: background-color 0.3s ease;
+}
+html.krem-mode .hero-overlay {
+    background-color: rgba(237, 237, 206, 0.55);
+}
