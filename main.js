@@ -66,9 +66,10 @@ window.addEventListener("scroll", () => {
 });
 
 const texts = [
-    "Game Developer",
+    "IT Support & Operational Admin",
     "EdTech Creator",
-    "Cloud & Cybersecurity Enthusiast"
+    "Helpdesk Operator",
+    "Junior Web Developer"
 ];
 let count = 0;
 let index = 0;
